@@ -1,0 +1,22 @@
+plugins {
+    id 'java'
+}
+
+group 'org.example'
+version '1.0-SNAPSHOT'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    implementation 'org.apache.poi:poi:5.0.0'
+    implementation 'org.apache.poi:poi-ooxml:5.0.0'
+    implementation 'org.seleniumhq.selenium:selenium-java:3.141.59'
+    implementation 'io.github.bonigarcia:webdrivermanager:5.1.1'
+}
+
+
+test {
+    useJUnitPlatform()
+}
